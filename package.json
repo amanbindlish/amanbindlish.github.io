@@ -20,7 +20,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -b master -d public"
   },
   "husky": {
     "hooks": {
