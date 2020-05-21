@@ -45,7 +45,7 @@ const StyledSkillLink = styled.a`
   &:hover,
   &:focus {
     background: transparent;
-    transform: translateX(3px);
+    transform: scale(1.1) translateX(3px);
     svg {
       fill: ${colors.green};
     }
@@ -77,7 +77,7 @@ const StyledAvatar = styled(Img)`
   transition: ${theme.transition};
 `;
 const StyledAvatarLink = styled.a`
-  ${mixins.boxShadow};
+  // ${mixins.boxShadow};
   width: 100%;
   position: relative;
   border-radius: ${theme.borderRadius};
@@ -87,10 +87,11 @@ const StyledAvatarLink = styled.a`
   &:focus {
     background: transparent;
     &:after {
-      top: 15px;
-      left: 15px;
+      top: 10px;
+      left: 10px;
     }
     ${StyledAvatar} {
+      transform: translate(3px, 3px);
       filter: none;
       mix-blend-mode: normal;
     }
@@ -103,21 +104,22 @@ const StyledAvatarLink = styled.a`
     width: 100%;
     height: 100%;
     border-radius: ${theme.borderRadius};
-    transition: ${theme.transition};
+    // transition: ${theme.transition};
   }
   &:before {
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: ${colors.navy};
+    // background-color: ${colors.navy};
     mix-blend-mode: screen;
   }
   &:after {
-    border: 2px solid ${colors.green};
-    top: 20px;
-    left: 20px;
-    z-index: -1;
+    border-right: 2px solid ${colors.green};
+    border-bottom: 2px solid ${colors.green};
+    top: 15px;
+    left: 15px;
+    z-index: -2;
   }
 `;
 

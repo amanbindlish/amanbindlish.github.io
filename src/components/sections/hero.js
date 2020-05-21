@@ -4,6 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { email } from '@config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section } from '@styles';
+import ReactTypingEffect from 'react-typing-effect';
 const { colors, fontSizes, fonts, navDelay, loaderDelay } = theme;
 
 const StyledContainer = styled(Section)`
@@ -44,12 +45,19 @@ const StyledSubtitle = styled.h3`
   ${media.phone`font-size: 30px;`};
 `;
 const StyledDescription = styled.div`
-  margin-top: 25px;
   width: 80%;
   max-width: 800px;
   a {
     ${mixins.inlineLink};
   }
+`;
+const StyledTypical = styled.h4`
+  margin-top: 20px;
+  width: 80%;
+  max-width: 800px;
+  color: ${colors.lightestSlate};
+  font-size: ${fontSizes.xxl};
+  font-weight: 500;
 `;
 const StyledEmailLink = styled.a`
   ${mixins.bigButton};
@@ -75,19 +83,35 @@ const Hero = ({ data }) => {
   const three = () => (
     <StyledSubtitle style={{ transitionDelay: '300ms' }}>{frontmatter.subtitle}</StyledSubtitle>
   );
+
   const four = () => (
+    <div style={{ transitionDelay: '400ms' }}>
+      <StyledTypical>
+          <ReactTypingEffect
+            text={['Developer', 'Tech-geek', 'Gadget-freak', 'Photographer', 'Husband :)']}
+            staticText='I am a <'
+            speed='100'
+            typingDelay='500'
+            eraseDelay='1500'
+          />
+        <span>{' />'}</span>
+      </StyledTypical>
+    </div>
+  );
+
+  const five = () => (
     <StyledDescription
-      style={{ transitionDelay: '400ms' }}
+      style={{ transitionDelay: '500ms' }}
       dangerouslySetInnerHTML={{ __html: html }}
     />
   );
-  const five = () => (
-    <div style={{ transitionDelay: '500ms' }}>
+  const six = () => (
+    <div style={{ transitionDelay: '600ms' }}>
       <StyledEmailLink href={`mailto:${email}`}>Connect with Me</StyledEmailLink>
     </div>
   );
 
-  const items = [one, two, three, four, five];
+  const items = [one, two, three, four, five, six];
 
   return (
     <StyledContainer>
