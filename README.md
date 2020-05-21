@@ -6,4 +6,4 @@
 </h1>
 
 Experimented with React to learn and make single web app, so built my own basic portfolio. Also managed to work the portfolio on all screen sizes.
-I'll be adding more features into the same very soon. You can also have a look on the final portfolio [here](https://amanbindlish.github.io).
+I'll be adding more features into the same very soon. You can also have a look on the final portfolio [here](https://amanbindlish.com).
