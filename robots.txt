@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://amanbindlish.github.io/sitemap.xml
-Host: https://amanbindlish.github.io
+Sitemap: https://amanbindlish.com/sitemap.xml
+Host: https://amanbindlish.com
