@@ -60,6 +60,10 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
             test: /animejs/,
             use: loaders.null(),
           },
+          {
+            test: /react-typing-effect/,
+            use: loaders.null(),
+          },
         ],
       },
     });
