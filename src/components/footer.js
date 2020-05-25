@@ -113,7 +113,7 @@ const Footer = () => {
         </StyledGitHubLink>
         <br/>
         <StyledGitHubLink
-          href="https://www.linkedin.com/in/aman-bindlish/"
+          href="https://www.linkedin.com/in/amanbindlish/"
           target="_blank"
           rel="nofollow noopener noreferrer">
           <div>Learned &amp; contributed with ❤️ by Aman Bindlish.</div>

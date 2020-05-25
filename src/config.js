@@ -3,7 +3,7 @@ module.exports = {
   siteDescription:
     'Aman Bindlish is into Software development for more than 7 years, specialised in building smartphone applications leading towards Business Intelligence and Data Analytics to make the businesses or firms achieve new levels of innovations.',
   siteKeywords:
-    'Aman Bindlish, Aman, Bindlish, amanbindlish, aman-bindlish, software engineer, front-end engineer, web developer, javascript, indian, android engineer, mobile engineer, android developer',
+    'Aman Bindlish, Aman, Bindlish, amanbindlish, amanbindlish.com, aman, bindlish, aman-bindlish, software engineer, front-end engineer, web developer, javascript, indian, android engineer, mobile engineer, android developer',
   siteUrl: 'https://amanbindlish.com',
   siteLanguage: 'en_US',
   googleAnalyticsID: 'UA-167448072-1',
@@ -20,7 +20,7 @@ module.exports = {
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/aman-bindlish/',
+      url: 'https://www.linkedin.com/in/amanbindlish/',
     },
     {
       name: 'Medium',
